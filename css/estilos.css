@@ -1,0 +1,108 @@
+.contenedor1 {
+    background-color: black;
+    padding: 10px;
+    /*width: 600px;*/
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    align-content: space-between;
+}
+/*.caja {
+    background-color: gray;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}*/
+
+.caja1 {
+    background-color: purple;
+    width: 150px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex; 
+    justify-content: center;
+}
+
+.cajitasde1 {
+    background-color: mediumaquamarine;
+    width: 90px;
+    height: 210px;
+    margin: 10px;
+}
+
+.caja2 {
+    background-color: mediumturquoise;
+    width: 150px;
+    margin: 5px;
+    flex-grow: 5;
+    flex-wrap: wrap; 
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.cajitasde2 {
+    background-color: greenyellow;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.caja3 {
+    background-color: greenyellow;
+    width: 150px;
+    margin: 5px;
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.cajitas1de3 {
+    background-color: purple;
+    width: 200px;
+    height: 90px;
+    margin: 5px; 
+    order: 1;
+}
+    
+.cajitas2de3 {
+    background-color: purple;
+    width: 90px;
+    height: 190px;
+    margin: 5px;
+    display: inline-block;
+    order: 2;
+}
+
+.cajitas3de3 {
+    background-color: purple;
+    width: 200px;
+    height: 90px;
+    margin: 5px;
+    display: inline-block;
+    order: 3;
+}
+
+.cajitas4de3 {
+    background-color: purple;
+    width: 90px;
+    height: 190px;
+    margin: 5px;
+    display: inline-block;
+    order: 4;
+}
+
+@media (max-width: 600px) {
+    .contenedor1 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .caja1, .caja2, .caja3 {
+        width: 100%;
+        margin: 5px 0; 
+    }
+}
